@@ -1,7 +1,7 @@
 var Path = require('path');
 var Hapi = require('hapi');
 
-// Create a server with a host and port
+//Create a server with a host and port
 var server = new Hapi.Server('localhost', 8000);
 
 server.views({
@@ -11,7 +11,7 @@ server.views({
   path: Path.join(__dirname, 'templates')
 });
 
-// Add the route
+//Add the route
 server.route({
   method: 'GET',
   path: '/hello',
@@ -20,5 +20,5 @@ server.route({
   }
 });
 
-// Start the server
+//Start the server
 server.start();

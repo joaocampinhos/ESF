@@ -1,24 +1,14 @@
-var Path = require('path');
 var Hapi = require('hapi');
+var Path = require('path');
 
-//Create a server with a host and port
-var server = new Hapi.Server('localhost', 8000);
+var settings = require('./lib/settings');
+var plugins = require('./lib/plugins');
+var routes = require('./lib/routes');
 
-server.views({
-  engines: {
-    html: require('handlebars')
-  },
-  path: Path.join(__dirname, 'templates')
-});
+var server = new Hapi.Server('localhost', settings.port);
 
-//Add the route
-server.route({
-  method: 'GET',
-  path: '/hello',
-  handler: function (request, reply) {
-    reply.view('index');
-  }
-});
+server.pack.register(plugins, function (err) { if(err){console.log(err);return;} });
+server.views(settings.views);
+server.route(routes);
 
-//Start the server
 server.start();

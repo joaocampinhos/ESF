@@ -7,7 +7,8 @@ module.exports = {
     basePath: __dirname,
     path: './templates',
     layoutPath: './templates/layout',
-    helpersPath: './templates/helpers'
+    helpersPath: './templates/helpers',
+    isCached: false
   }
 };
 

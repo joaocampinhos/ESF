@@ -30,5 +30,11 @@
     "hapi-auth-cookie": "^1.4.0",
     "hapi-nedb": "git://github.com/joaocampinhos/hapi-nedb.git",
     "nedb": "^0.11.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-load-plugins": "^0.7.1",
+    "gulp-sass": "^1.1.0"
   }
 }

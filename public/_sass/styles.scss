@@ -1,28 +1,54 @@
-@import 'normalize';
-@import 'typo';
-
 body {
+  font-family: 'RobotoDraft', sans-serif;
   background-color: #f9f9f9;
 }
 
-.bar {
-  padding: 0 10%;
+core-toolbar {
   background-color: #4caf50;
   color: white;
-  height: 65px;
-  font-weight: 300;
-  letter-spacing: 0.05em;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-  .title {
-    font-size: 22px;
-    line-height: 65px;
-  }
-  .avatar {
-    vertical-align: middle;
+}
+
+.lo {
+  color: #e8f5e9;
+  text-decoration: none;
+  .go {
+    font-weight: 500;  
+    color: #1b5e20;
   }
 }
 
 .avatar {
-  display:inline-block;
-  img {  border-radius: 3px;}
+  border-radius: 3px;
+}
+
+paper-button.hover:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+paper-button.label {
+  background-color: #ECEFF1;
+  color: #333;
+  font-size: 70%;
+}
+
+paper-button.green {
+  background-color: #4caf50;
+  color: #e8f5e9;
+}
+
+paper-dropdown {
+  color: black;
+}
+
+.hero {
+  font-size: 130%;
+  margin: 0 auto;
+  padding: 2em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width:100%;
+  max-width: 800px;
+  text-align: center;
+  p {font-size: 150%;}
 }

@@ -4,14 +4,29 @@
   <meta charset="UTF-8">
   <title>Research-Cenas</title>
   <link href="/public/styles.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+  <script src="//www.polymer-project.org/components/webcomponentsjs/webcomponents.js"></script>
+  <link rel="import" href="//www.polymer-project.org/components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="//www.polymer-project.org/components/core-dropdown/core-dropdown.html">
+  <link rel="import" href="//www.polymer-project.org/components/core-header-panel/core-header-panel.html">
+  <link rel="import" href="//www.polymer-project.org/components/core-icons/core-icons.html">
+  <link rel="import" href="//www.polymer-project.org/components/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="//www.polymer-project.org/components/paper-button/paper-button.html">
+  <link rel="import" href="//www.polymer-project.org/components/paper-menu-button/paper-menu-button.html">
+  <!--<link rel="import" href="/public/_js/paper-button.html">-->
+  <link rel="import" href="//www.polymer-project.org/components/paper-dropdown/paper-dropdown.html">
+  <link rel="import" href="//www.polymer-project.org/components/paper-shadow/paper-shadow.html">
+  <link rel="import" href="//www.polymer-project.org/components/paper-toast/paper-toast.html">
+  <link href='http://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,700' rel='stylesheet' type='text/css'>
 </head>
-<body>
-  <div class="bar">
-    <span class="title">ResearchGate</span>
-    <div class="avatar"><img src="https://avatars0.githubusercontent.com/u/239438?v=3&s=40"></div>
-  </div>
-  <h3>{{message}}</h3><br/>
-  <hr>
-  {{{content}}}
-</body>
+  <body fullbleed vertical layout unresolved>
+    <core-header-panel flex>
+      <core-toolbar id="mainheader">
+        <a href="/" class="lo" flex >Research<span class="go">Gate</span></a>
+        <paper-button raised onclick="window.location.href = '/login';" class="label">Login</paper-button>
+      </core-toolbar>
+    <h3>{{message}}</h3>
+    {{{content}}}
+    </core-header-panel>
+    <paper-toast opened responsiveWidth='10000px' narrowMode text="{{message}}"></paper-toast>
+  </body>
+</html>

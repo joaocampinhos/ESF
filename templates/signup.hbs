@@ -1,8 +1,42 @@
-<h1>signup</h1>
-<form method="post" action="/signup">
-  Username: <input type="text" name="username"><br>
-  Name: <input type="text" name="name"><br>
-  Email: <input type="text" name="email"><br>
-  Password: <input type="password" name="password"><br/>
-  <input type="submit" value="Signup">
-</form>
+<div class="content">
+  <br>
+  <h1>ResearchGate Signup</h1>
+  <form method="post" action="/signup">
+    <paper-input-decorator label="Username" floatingLabel>
+      <input type="text" name="username">
+    </paper-input-decorator>
+    <paper-input-decorator label="Name" floatingLabel>
+      <input type="text" name="name">
+    </paper-input-decorator>
+    <paper-input-decorator label="Email" floatingLabel>
+      <input type="text" name="email">
+    </paper-input-decorator>
+    <paper-input-decorator label="Password" floatingLabel>
+      <input type="password" name="password">
+    </paper-input-decorator>
+  <button class="green" type="submit" value="Signup" is="paper-button-submit">Signup</button>
+  </form>
+</div>
+
+
+
+<polymer-element name="paper-button-submit" extends="button" noscript>
+<template>
+<style>
+:host {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+}
+
+:host paper-button {
+  background-color: #4caf50;
+  color: #e8f5e9;
+}
+</style>
+<paper-button noink raised>
+<content></content>
+</paper-button>
+</template>
+</polymer-element>

@@ -1,6 +1,7 @@
 body {
   font-family: 'RobotoDraft', sans-serif;
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  color: #323232; }
 
 core-toolbar {
   background-color: #4caf50;
@@ -45,3 +46,7 @@ paper-dropdown {
   text-align: center; }
   .hero p {
     font-size: 150%; }
+
+.content {
+  max-width: 900px;
+  margin: 0 auto; }

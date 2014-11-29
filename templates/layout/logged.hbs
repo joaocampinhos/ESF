@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Research-Cenas</title>
-  <link href="/public/styles.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<title>Research-Cenas</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="/public/styles.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="bar">
-    <span class="title">ResearchGate</span>
-    <div class="avatar"><img src="https://avatars0.githubusercontent.com/u/239438?v=3&s=40"></div>
+<div class="navbar navbar-success">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="javascript:void(0)"><span class="lo">Research<span class="go">Gate</span></span></a>
   </div>
-  <h3>{{message}}</h3><br/>
-  <hr>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="javascript:void(0)">Questions</a></li>
+      <li><a href="javascript:void(0)">Publications</a></li>
+      <li><a href="javascript:void(0)">Jobs</a></li>
+      <li><a href="javascript:void(0)">Search</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container">
   {{{content}}}
+</div>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="public/scripts.js"></script>
 </body>
+</html>

@@ -1,56 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Research-Cenas</title>
-  <link href="/public/styles.css" rel="stylesheet" type="text/css">
-  <!--<script src="//www.polymer-project.org/components/webcomponentsjs/webcomponents.js"></script>-->
-  <script src="/public/bower_components/webcomponentsjs/webcomponents.js"></script>
-  <link rel="import" href="/public/bower_components/core-toolbar/core-toolbar.html">
-  <link rel="import" href="/public/bower_components/core-dropdown/core-dropdown.html">
-  <link rel="import" href="/public/bower_components/core-header-panel/core-header-panel.html">
-  <link rel="import" href="/public/bower_components/core-icons/core-icons.html">
-  <link rel="import" href="/public/bower_components/paper-icon-button/paper-icon-button.html">
-  <link rel="import" href="/public/bower_components/paper-button/paper-button.html">
-  <link rel="import" href="/public/bower_components/paper-menu-button/paper-menu-button.html">
-  <!--<link rel="import" href="/public/_js/paper-button.html">-->
-  <link rel="import" href="/public/bower_components/paper-dropdown/paper-dropdown.html">
-  <link rel="import" href="/public/bower_components/paper-shadow/paper-shadow.html">
-  <link rel="import" href="/public/bower_components/paper-toast/paper-toast.html">
-  <link rel="import" href="/public/bower_components/paper-input/paper-input-decorator.html">
-  <link href='http://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,700' rel='stylesheet' type='text/css'>
-  <style>
-    paper-input-decorator /deep/ .label-text,
-    paper-input-decorator /deep/ .error {
-          /* inline label,  floating label, error message and error icon color when the input is unfocused */
-          color: #4caf50 !important;
-    }
-    paper-input-decorator[focused] /deep/ .floating-label .label-text {
-          /* floating label color when the input is focused */
-          color: #4caf50;
-    }
-
-    paper-input-decorator /deep/ .focused-underline {
-          /* line color when the input is focused */
-          background-color: #4caf50;
-    }
-    paper-input-decorator /deep/ .cursor {
-          /* cursor color during the focus transition */
-          background-color: #4caf50;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Research-Cenas</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="/public/styles.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,700' rel='stylesheet' type='text/css'>
 </head>
-  <body fullbleed vertical layout>
+<!--<body fullbleed vertical layout>
     <core-header-panel flex>
       <core-toolbar id="mainheader">
         <a href="/" class="lo" flex >Research<span class="go">Gate</span></a>
         <paper-button raised onclick="window.location.href = '/login';" class="label">Login</paper-button>
       </core-toolbar>
-    <!--<h3>{{message}}</h3>-->
     {{{content}}}
     </core-header-panel>
     {{#if message}}
       <paper-toast opened responsiveWidth='10000px' narrowMode text="{{message}}"></paper-toast>
-    {{/if}}
-  </body>
+    {{/if}}-->
+<body>
+<div class="navbar navbar-success">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/"><span class="lo">Research<span class="go">Gate</span></span></a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <div class="nav navbar-nav navbar-right">
+      <a href="/login" class="btn btn-flat btn-lg btn-raised">Login</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  {{{content}}}
+</div>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="public/scripts.js"></script>
+</body>
 </html>

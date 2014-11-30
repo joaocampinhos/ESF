@@ -7,17 +7,6 @@
 <link href="/public/styles.css" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,700' rel='stylesheet' type='text/css'>
 </head>
-<!--<body fullbleed vertical layout>
-    <core-header-panel flex>
-      <core-toolbar id="mainheader">
-        <a href="/" class="lo" flex >Research<span class="go">Gate</span></a>
-        <paper-button raised onclick="window.location.href = '/login';" class="label">Login</paper-button>
-      </core-toolbar>
-    {{{content}}}
-    </core-header-panel>
-    {{#if message}}
-      <paper-toast opened responsiveWidth='10000px' narrowMode text="{{message}}"></paper-toast>
-    {{/if}}-->
 <body>
 <div class="navbar navbar-success">
   <div class="navbar-header">
@@ -37,6 +26,7 @@
 <div class="container">
   {{{content}}}
 </div>
+{{{message}}}
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="public/scripts.js"></script>

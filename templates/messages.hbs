@@ -1,0 +1,21 @@
+<div class="page-header">
+  <h1>Messages</h1>
+</div>
+
+<div class="list-group">
+  {{#each messages}}
+  <div class="list-group-item">
+    <a class="success" href="/profile/{{{this.user}}}">
+      <div class="row-picture">
+        <img src="http://lorempixel.com/56/56/people/9" alt="icon">
+      </div>
+    </a>
+    <a href="/messages/{{{this.user}}}">
+      <div class="row-content">
+        <h4 class="list-group-item-heading">{{{this.user}}}</h4>
+      </div>
+    </a>
+  </div>
+  <div class="list-group-separator"></div>
+  {{/each}}
+</div>

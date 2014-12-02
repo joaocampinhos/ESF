@@ -5,6 +5,7 @@
 <title>Research-Cenas</title>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 <link href="/public/styles.css" rel="stylesheet" type="text/css">
+<link href="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -24,13 +25,28 @@
       <li><a href="javascript:void(0)">Jobs</a></li>
       <li><a href="javascript:void(0)">Search</a></li>
     </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+      <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">{{user}} <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="/profile/{{user}}">Profile</a></li>
+        <li><a href="/messages">Messages</a></li>
+        <li class="divider"></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+      </li>
+    </ul>
   </div>
 </div>
 <div class="container">
   {{{content}}}
 </div>
+{{#if message}}
+  <div id="message" data-timeout=0 data-content="{{{message}}}"></div>
+{{/if}}
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.js"></script>
 <script src="public/scripts.js"></script>
 </body>
 </html>

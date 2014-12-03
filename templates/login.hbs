@@ -1,5 +1,24 @@
-<form method="post" action="/login">
-  Username: <input type="text" name="username"><br>
-  Password: <input type="password" name="password"><br/>
-  <input type="submit" value="Login">
-</form>
+<div class="well bs-component">
+  <form method="post" action="/login" class="form-horizontal">
+    <fieldset>
+      <legend>ResearchGate Login</legend>
+      <div class="form-group">
+        <label for="username" class="col-lg-2 control-label">Username</label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+        <div class="col-lg-10">
+          <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+          <button type="submit" class="btn btn-success btn-raised">Submit</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>

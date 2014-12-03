@@ -19,9 +19,23 @@
     <a class="navbar-brand" href="/"><span class="lo">Research<span class="go">Gate</span></span></a>
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
-    <div class="nav navbar-nav navbar-right">
-      <a href="/login" class="btn btn-flat btn-lg btn-raised">Login</a>
-    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="javascript:void(0)">Questions</a></li>
+      <li><a href="javascript:void(0)">Publications</a></li>
+      <li><a href="javascript:void(0)">Jobs</a></li>
+      <li><a href="javascript:void(0)">Search</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+      <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">{{user}} <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="/profile/{{user}}">Profile</a></li>
+        <li><a href="/messages">Messages</a></li>
+        <li class="divider"></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+      </li>
+    </ul>
   </div>
 </div>
 <div class="container">

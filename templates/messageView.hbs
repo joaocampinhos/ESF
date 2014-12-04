@@ -1,0 +1,18 @@
+<h1>Conversa com {{messages.user}}</h1>
+<ul class="people_list">
+  {{#each messages.messages}}
+  <h3><b>{{this.from}}:</b> {{message}} </h3>
+  {{/each}}
+</ul>
+<hr>
+<form class="form-horizontal" method="post" action="/messages">
+  <div class="form-group has-success">
+    <div class="input-group">
+      <input name="message" type="text" class="input-lg form-control" placeholder="mensagem" required>
+      <input type="hidden" name="to" value="{{messages.user}}">
+      <span class="input-group-btn">
+        <button class="btn btn-success btn-sm" type="submit">Enviar</button>
+      </span>
+    </div>
+  </div>
+</form>

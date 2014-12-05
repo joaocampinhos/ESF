@@ -3,3 +3,6 @@
 {{else}}
   <h1>No Profile</h1>
 {{/with}}
+{{#if diff}}
+  <a href="/messages/{{{profile.username}}}" class="btn btn-success btn-raised">Send  Mensage</a>
+{{/if}}

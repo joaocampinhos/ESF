@@ -1,1 +1,24 @@
 <h1>Search</h1>
+<form method="get" action="/search">
+  <input type="text" name="q" placeholder="Search">
+  <input type="submit">
+</form>
+
+<br>
+
+<div class="list-group">
+{{#each users}}
+  <div class="list-group-item">
+    <a class="success" href="/profile/{{{this.username}}}">
+      <div class="row-picture">
+        <img src="http://lorempixel.com/56/56/people/9" alt="icon">
+      </div>
+      <div class="row-content">
+        <h4 class="list-group-item-heading">{{{this.username}}}</h4>
+        <p class="list-group-item-text">{{{this.name}}}</p>
+      </div>
+    </a>
+  </div>
+  <div class="list-group-separator"></div>
+{{/each}}
+</div>

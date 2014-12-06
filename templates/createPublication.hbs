@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Create Publication</h3>
+        </div>
+        <div class="panel-body">
+            <form method="post" action="/publication/create" class="navbar-form navbar-left" role="createPub">
+                <div class="form-group">
+                    <input type="text" class="form-control" name= "title" placeholder="Title">
+                </div>
+                <select name="pubType">
+                        <option value="type1">Type1</option>
+                        <option value="type2">Type2</option>
+                        <option value="type3">Type3</option>
+                </select>
+                <input type="file" name="file" />
+              <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+      </div>
+  </div>
+</div>

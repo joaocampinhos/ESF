@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 100;
   src: local('RobotoDraft Thin'), local('RobotoDraft-Thin'), url(https://fonts.gstatic.com/s/robotodraft/v2/hope9NW9iJ5hh8P5PM_EA2zZpt1Zv2lgqhgSPQ2HnUo.woff2) format('woff2');
-  unicode-range: U0 -0FF, U131, U152 -153, U2C6, U2DA, U2DC, U2000 -206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+  unicode-range: U0 0FF, U131, U152 -153, U2C6, U2DA, U2DC, U2000 -206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
 
 .shadow-z-1, .card, .snackbar {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
@@ -3091,7 +3091,7 @@ legend {
   @media (max-width: 767px) {
     .navbar .navbar-nav .open .dropdown-menu > .dropdown-header {
       border: 0;
-      color: rgba(211, 211, 211, 0.84); }
+      color: rgba(212, 212, 212, 0.84); }
     .navbar .navbar-nav .open .dropdown-menu .divider {
       background-color: rgba(255, 255, 255, 0.84); }
     .navbar .navbar-nav .open .dropdown-menu > li > a {
@@ -3104,7 +3104,8 @@ legend {
       background-color: rgba(0, 0, 0, 0.05); }
     .navbar .navbar-nav .open .dropdown-menu > .disabled > a, .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #E5E5E5;
-      background-color: transparent; } }
+      background-color: transparent; }
+ }
   .navbar .navbar-link {
     color: rgba(255, 255, 255, 0.84); }
     .navbar .navbar-link:hover {
@@ -3423,7 +3424,7 @@ legend {
   background-color: #0F9D58;
   color: #FFFFFF; }
   .card-success .card-footer, .card-success .card-header {
-    border-color: #0b6e3d; }
+    border-color: #0b6e3e; }
   .card-success a {
     color: #FFFFFF; }
 
@@ -3431,7 +3432,7 @@ legend {
   background-color: #03A9F4;
   color: #FFFFFF; }
   .card-info .card-footer, .card-info .card-header {
-    border-color: #0288c2; }
+    border-color: #0286c2; }
   .card-info a {
     color: #FFFFFF; }
 
@@ -3439,7 +3440,7 @@ legend {
   background-color: #FF5722;
   color: #FFFFFF; }
   .card-warning .card-footer, .card-warning .card-header {
-    border-color: #ff7d55; }
+    border-color: #ff7e55; }
   .card-warning a {
     color: #FFFFFF; }
 
@@ -3463,7 +3464,7 @@ legend {
   background-color: #E91E63;
   color: #FFFFFF; }
   .card-material-pink .card-footer, .card-material-pink .card-header {
-    border-color: #c11350; }
+    border-color: #c1134e; }
   .card-material-pink a {
     color: #FFFFFF; }
 
@@ -3479,7 +3480,7 @@ legend {
   background-color: #673AB7;
   color: #FFFFFF; }
   .card-material-deeppurple .card-footer, .card-material-deeppurple .card-header {
-    border-color: #8159cb; }
+    border-color: #8259cb; }
   .card-material-deeppurple a {
     color: #FFFFFF; }
 
@@ -3487,7 +3488,7 @@ legend {
   background-color: #3F51B5;
   color: #FFFFFF; }
   .card-material-indigo .card-footer, .card-material-indigo .card-header {
-    border-color: #6071c7; }
+    border-color: #606fc7; }
   .card-material-indigo a {
     color: #FFFFFF; }
 
@@ -3495,7 +3496,7 @@ legend {
   background-color: #03A9F4;
   color: #fff; }
   .card-material-lightblue .card-footer, .card-material-lightblue .card-header {
-    border-color: #0288c2; }
+    border-color: #0286c2; }
   .card-material-lightblue a {
     color: #fff; }
 
@@ -3503,7 +3504,7 @@ legend {
   background-color: #00BCD4;
   color: #FFFFFF; }
   .card-material-cyan .card-footer, .card-material-cyan .card-header {
-    border-color: #0091a1; }
+    border-color: #008fa1; }
   .card-material-cyan a {
     color: #FFFFFF; }
 
@@ -3511,7 +3512,7 @@ legend {
   background-color: #009688;
   color: #FFFFFF; }
   .card-material-teal .card-footer, .card-material-teal .card-header {
-    border-color: #006359; }
+    border-color: #00635a; }
   .card-material-teal a {
     color: #FFFFFF; }
 
@@ -3519,7 +3520,7 @@ legend {
   background-color: #8BC34A;
   color: #FFFFFF; }
   .card-material-lightgreen .card-footer, .card-material-lightgreen .card-header {
-    border-color: #72a436; }
+    border-color: #71a436; }
   .card-material-lightgreen a {
     color: #FFFFFF; }
 
@@ -3527,7 +3528,7 @@ legend {
   background-color: #CDDC39;
   color: #FFFFFF; }
   .card-material-lime .card-footer, .card-material-lime .card-header {
-    border-color: #b3c022; }
+    border-color: #b2c022; }
   .card-material-lime a {
     color: #FFFFFF; }
 
@@ -3535,7 +3536,7 @@ legend {
   background-color: #FFEB3B;
   color: #080700; }
   .card-material-lightyellow .card-footer, .card-material-lightyellow .card-header {
-    border-color: #ffe208; }
+    border-color: #ffe608; }
   .card-material-lightyellow a {
     color: #080700; }
 
@@ -3543,7 +3544,7 @@ legend {
   background-color: #FF9800;
   color: #FFFFFF; }
   .card-material-orange .card-footer, .card-material-orange .card-header {
-    border-color: #cc7700; }
+    border-color: #cc7a00; }
   .card-material-orange a {
     color: #FFFFFF; }
 
@@ -3551,7 +3552,7 @@ legend {
   background-color: #FF5722;
   color: #FFFFFF; }
   .card-material-deeporange .card-footer, .card-material-deeporange .card-header {
-    border-color: #ee3800; }
+    border-color: #ee3900; }
   .card-material-deeporange a {
     color: #FFFFFF; }
 
@@ -3583,7 +3584,7 @@ legend {
   background-color: #ECECEC;
   color: #e6e6e6; }
   .card-material-lightgrey .card-footer, .card-material-lightgrey .card-header {
-    border-color: #d3d3d3; }
+    border-color: lightgray; }
   .card-material-lightgrey a {
     color: #e6e6e6; }
 

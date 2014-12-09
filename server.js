@@ -5,7 +5,7 @@ var settings = require('./settings');
 var plugins = require('./lib/plugins');
 var routes = require('./lib/routes');
 
-var server = new Hapi.Server('localhost', settings.port);
+var server = new Hapi.Server('localhost', process.env.PORT || settings.port);
 
 server.pack.register(plugins, function (err) {
 

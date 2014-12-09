@@ -3864,3 +3864,8 @@ a {
   a:hover, a:focus {
     color: #0c7e47;
     text-decoration: underline; }
+
+.embebido {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto; }

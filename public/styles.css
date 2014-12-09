@@ -2816,7 +2816,7 @@ select[multiple].form-control, select[multiple].form-control:focus, select[multi
   height: 85px; }
 
 .form-control-wrapper {
-  position: relative
+  position: relative;
   /* active state */ }
   .form-control-wrapper .form-control:focus, .form-control-wrapper .form-control.focus {
     outline: none; }

@@ -1,58 +1,62 @@
-<h1>Search</h1>
-<form method="get" action="/search">
-  <input type="text" value="{{query}}" name="q" placeholder="Search">
-  <input type="submit">
-</form>
-
-<br>
-
-{{#if users}}
-<div class="list-group">
-  <h2>Users</h2>
-{{#each users}}
-  <div class="list-group-item">
-    <a class="success" href="/profile/{{{this.username}}}">
-      <div class="row-picture">
-        <img src="http://placehold.it/57x56" alt="icon">
+<div class="container-fluid">
+  <div class="jumbotron row">
+    <form method="get" action="/search">
+      <input type="text" value="{{query}}" class="searchform col-md-9 col-xs-12 col-sm-8 " name="q" placeholder="Search">
+      <select name="filter" class="shadow-z-2 searchselect col-xs-12 col-sm-3 col-md-2" id="select">
+        <option selected>Filter</option>
+        <option>Users</option>
+        <option>Publications</option>
+      </select>
+      <div class="text-center col-xs-12 col-sm-1 col-md-1">
+        <button type="submit" class="shadow-z-2 searchsubmit">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </button>
       </div>
-      <div class="row-content">
-        <h4 class="list-group-item-heading">{{{this.username}}}</h4>
-        <p class="list-group-item-text">{{{this.name}}}</p>
-      </div>
-    </a>
+    </form>
   </div>
-  <div class="list-group-separator"></div>
-{{/each}}
 </div>
-{{/if}}
-
-{{#unless users}}
-{{#unless pubs}}
-nem users nem pubs
-{{else}}
-nao users
-{{/unless}}
-{{/unless}}
 
 
-{{#if pubs}}
-<div class="list-group">
-  <h2>Publications</h2>
-{{#each pubs}}
-  <div class="list-group-item">
-    <a class="success" href="/publication/{{{this._id}}}">
-      <div class="row-content">
-        <h4 class="list-group-item-heading">{{{this.title}}}</h4>
-        <p class="list-group-item-text">Author(s): {{{this.author.username}}}</p>
-      </div>
-    </a>
-  </div>
-{{/each}}
-</div>
-{{/if}}
+{{#if query}}
 
-{{#if users}}
-{{#unless pubs}}
-nao pubs
-{{/unless}}
+  {{#if users}}
+    <div class="list-group">
+      <h2>Users</h2>
+      {{#each users}}
+        <div class="list-group-item">
+          <a class="success" href="/profile/{{{this.username}}}">
+            <div class="row-picture">
+              <img src="http://placehold.it/57x56" alt="icon">
+            </div>
+            <div class="row-content">
+              <h4 class="list-group-item-heading">{{{this.username}}}</h4>
+              <p class="list-group-item-text">{{{this.name}}}</p>
+            </div>
+          </a>
+        </div>
+        <br>
+      {{/each}}
+    </div>
+  {{/if}}
+
+  {{#unless users}} {{#unless pubs}}
+    <h4 class="text-center">No results for <b>{{query}}</b></h4>
+  {{/unless}} {{/unless}}
+
+  {{#if pubs}}
+    <div class="list-group">
+      <h2>Publications</h2>
+      {{#each pubs}}
+        <div class="list-group-item">
+          <a class="success" href="/publication/{{{this._id}}}">
+            <div class="row-content">
+              <h4 class="list-group-item-heading">{{{this.title}}}</h4>
+              <p class="list-group-item-text">Author(s): {{{this.author.username}}}</p>
+            </div>
+          </a>
+        </div>
+      {{/each}}
+    </div>
+  {{/if}}
+
 {{/if}}
